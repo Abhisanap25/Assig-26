@@ -60,8 +60,8 @@
         document.body.style.color = "white";
         icoLight.style.visibility = "hidden";
         icoDark.style.visibility = "visible";
-        themeToggle.classList.remove("theme-toggle-light");
-        themeToggle.classList.add("theme-toggle-dark");
+        themeToggler.classList.remove("theme-toggle-light");
+        themeToggler.classList.add("theme-toggle-dark");
         localStorage.setItem("theme", "dark");
     }
     function toggleLight(){
@@ -69,8 +69,8 @@
         document.body.style.color = "black";
         icoLight.style.visibility = "visible";
         icoDark.style.visibility = "hidden";
-        themeToggle.classList.remove("theme-toggle-dark");
-        themeToggle.classList.add("theme-toggle-light");
+       themeToggler.classList.remove("theme-toggle-dark");
+       themeToggler.classList.add("theme-toggle-light");
         localStorage.setItem("theme", "light");
     }
    function renderTheme(){
